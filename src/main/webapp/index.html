@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Artist Search</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="search.js" defer></script>
+</head>
+
+<body>
+
+
+
+
+  <header>
+    <h1>Artist Search</h1>
+    <nav>
+      <a href="."><button class="page-focus" id="nav1">Search</button></a>
+      <a href="login.html"><button class="none" id="nav2">Log In</button></a>
+      <a href="register.html"><button class="none" id="nav3">Register</button></a>
+    </nav>
+  </header>
+  
+  
+  
+  
+  
+  <main id="home-main">
+  
+    <!-- Search Bar -->
+  	<form id="search-bar">
+  	  <button type="submit" id="search-button">
+        <img src="assets/images/search_icon.png" id="search">
+      </button>
+
+      <input type="text" id="input" name="q" required placeholder="Please enter an artist name.">
+
+      <button type="reset" id="clear-button">
+        <img src="assets/images/clear_icon.png" id="clear">
+      </button>
+    </form>
+    
+    <!-- No Results Message -->
+    <div class="error" id="no-results">
+      <p>No results found.</p>
+    </div>
+    
+    <!-- Loading GIF -->
+    <img src="assets/images/loading.gif" id="loading-gif">
+  	
+  	<!-- Search Results -->
+  	<div id="results">
+      <div class="artist-card" id="artist-card-1">
+        <img src="" class="artist-image" id="artist-image-1">
+        <p class="artist-name" id="artist-name-1"></p>
+      </div>
+      <div class="artist-card" id="artist-card-2">
+        <img src="" class="artist-image" id="artist-image-2">
+        <p class="artist-name" id="artist-name-2"></p>
+      </div>
+      <div class="artist-card" id="artist-card-3">
+        <img src="" class="artist-image" id="artist-image-3">
+        <p class="artist-name" id="artist-name-3"></p>
+      </div>
+      <div class="artist-card" id="artist-card-4">
+        <img src="" class="artist-image" id="artist-image-4">
+        <p class="artist-name" id="artist-name-4"></p>
+      </div>
+      <div class="artist-card" id="artist-card-5">
+        <img src="" class="artist-image" id="artist-image-5">
+        <p class="artist-name" id="artist-name-5"></p>
+      </div>
+      <div class="artist-card" id="artist-card-6">
+        <img src="" class="artist-image" id="artist-image-6">
+        <p class="artist-name" id="artist-name-6"></p>
+      </div>
+      <div class="artist-card" id="artist-card-7">
+        <img src="" class="artist-image" id="artist-image-7">
+        <p class="artist-name" id="artist-name-7"></p>
+      </div>
+      <div class="artist-card" id="artist-card-8">
+        <img src="" class="artist-image" id="artist-image-8">
+        <p class="artist-name" id="artist-name-8"></p>
+      </div>
+      <div class="artist-card" id="artist-card-9">
+        <img src="" class="artist-image" id="artist-image-9">
+        <p class="artist-name" id="artist-name-9"></p>
+      </div>
+      <div class="artist-card" id="artist-card-10">
+        <img src="" class="artist-image" id="artist-image-10">
+        <p class="artist-name" id="artist-name-10"></p>
+      </div>
+    </div>
+    
+    <!-- Artist Profile -->
+    <div id="profile">
+		 <h1 id="profile-heading"><span id="name"></span> <span id="years"></span></h1>
+		 <h2 id="nationality"></h2>
+		 <p id="bio"></p>
+    </div>
+    
+  </main>
+  
+  
+  
+  
+  
+  <footer>
+    <div>
+      <p>Powered by</p>
+      <img src="assets/images/artsy_logo.svg">
+      <p><a href="https://www.artsy.net/">Artsy.</a></p>
+    </div>
+  </footer>
+  
+  
+  
+</body>
+</html>

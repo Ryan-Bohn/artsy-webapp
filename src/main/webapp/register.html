@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Artist Search</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="search.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Artist Search</h1>
+    <nav>
+      <a href="."><button class="none" id="nav1">Search</button></a>
+      <a href="login.html"><button class="none" id="nav2">Log In</button></a>
+      <a href="register.html"><button class="page-focus" id="nav3">Register</button></a>
+    </nav>
+  </header>
+  
+  <main id="register-main">
+    
+    <div class="account-frame">
+    
+      <h3>Register</h3>
+      <form id="register">
+        
+        <div class="input-group">
+          <label for="fullname">Fullname</label>
+          <input type="text" id="fullname" name="fullname" required placeholder="John Doe" />
+          <span id="fullname-warning">Fullname is required.</span>
+        </div>
+        
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter Email" />
+          <span id="email-warning">Email must be valid.</span>
+        </div>
+        
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="Password">
+          <span id="password-warning">Password is required.</span>
+        </div>
+        
+        <button type="submit" id="register-button" disabled>
+       	  Register
+        </button>
+      </form>
+    </div>
+    
+    <p>Already have an account? <a href="login.html">Log in.</a></p>
+    
+  </main>
+  
+  <footer>
+    <div>
+      <p>Powered by</p>
+      <img src="assets/images/artsy_logo.svg">
+      <p>Artsy.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

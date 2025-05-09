@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS artistsearch;
+USE artistsearch;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS favorites (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    artist_id VARCHAR(100) NOT NULL,
+    artist_name VARCHAR(100) NOT NULL,
+    artist_image_url VARCHAR(500),
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);

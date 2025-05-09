@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+/*****************************/
+/* Header Styles*/
+/*****************************/
+ 
+html, body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+    padding: 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 20px;
+	margin: 0;
+}
+
+header nav {
+	display: flex;
+	gap: 5px;
+	padding: 0 5px;
+}
+
+header nav button {
+	background-color: inherit;
+	padding: 7px 12px;
+	border: 0px;
+	border-radius: 5px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.page-focus {
+	background-color: #155792;
+	color: white;
+}
+
+
+
+
+
+
+
+
+/*****************************/
+/* Home Main Styles */
+/*****************************/
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Search Bar */
+
+main #search-bar {
+	display: flex;
+	align-items: center;
+	border: 1.5px solid;
+	border-color: #cacaca;
+	border-radius: 20px;
+	padding: 5px;
+	width: 500px;
+	height: 30px;
+	margin: 20px auto;
+	background-color: white;
+}
+
+main #search-bar:focus-within {
+	border-color: #f57329;
+}
+
+main #search-bar input {
+	flex: 1;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	margin: 0 10px;
+}
+
+#search-button, #clear-button {
+	padding: none;
+	border: none;
+	margin: none;
+	background-color: transparent;
+}
+
+#search, #clear {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+#search:hover, #clear:hover {
+	opacity: 1.0;
+}
+
+
+
+
+/* Loading */
+
+#loading-gif {
+	display: none; /* set to block */
+	margin: 20px auto;
+	width: 70px;
+}
+
+
+
+
+/* Results */
+
+.error {
+	display: none; /* set to block */
+	width: 600px;
+	height: 60px;
+	border-radius: 20px;
+	margin: 30px auto;
+	text-align: center;
+	align-items: center;
+	background-color: #cccccc;
+}
+
+.error p {
+	margin: 20px;
+}
+
+#results {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	overflow-x: auto;
+	gap: 10px;
+ 	padding-bottom: 20px;
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+.artist-card {
+	display: none; /* set to block */
+	width: 160px;
+	height: 220px;
+	flex-shrink: 0;
+	border-radius: 5px;
+	padding: 20px 10px;
+  	text-align: center;
+	align-items: center;
+	background-color: #205375;
+	cursor: pointer;
+}
+
+.artist-card:hover {
+	background-color: #112B3C;
+}
+
+.artist-selected {
+	background-color: #112B3C;
+}
+
+.artist-card img {
+	width: 150px;
+	height: auto;
+	border: 2px solid white;
+	border-radius: 100%;
+	object-fit: cover;
+}
+
+.artist-card p {
+	margin-top: 15px;
+	font-size: 16px;
+	color: white;
+}
+
+
+/* Artist Profile */
+
+#profile {
+	display: none; /* set to flex */
+	flex-direction: column;
+	align-items: center;
+	width: 700px;
+	margin: 30px auto;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 15px;
+	margin: 0;
+}
+
+#profile p {
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+#fav-toggle {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+/*****************************/
+/* Register Main Styles */
+/*****************************/
+
+.account-frame {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid;
+	border-color: #cacaca;
+	border-radius: 5px;
+	padding: 20px;
+	width: 300px;
+	margin: 40px auto 0px auto;
+	background-color: white;
+}
+
+h3 {
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+#register-main p, #login-main p {
+	margin: 20px auto;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+.input-group label {
+	margin-bottom: 5px;
+}
+
+.input-group input {
+	padding: 8px;
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+
+.input-group span {
+	font-size: 12px;
+	color: red;
+	display: none;
+}
+
+#register-button, #login-button {
+	width: 100%;
+	padding: 12px;
+	background-color: #295e7d;
+	color: white;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+#register-button:disabled, #login-button:disabled {
+	cursor: not-allowed;
+	background-color: #7798bb;
+}
+
+
+
+
+
+/*****************************/
+/* Footer Styles */
+/*****************************/
+
+footer {
+	background-color: #18343c;
+	color: white;
+}
+
+footer div {
+	font-size: 12px;
+	display: flex;
+	width: fit-content;
+	margin: 20px auto;
+	text-align: center;
+}
+
+footer div p, footer div img {
+	margin: 2px;
+}
+
+footer div img {
+	width: 14px;
+	height: 14px;
+}
+
+footer div p a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/* End of style.css */

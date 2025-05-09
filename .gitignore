@@ -1,0 +1,9 @@
+# Ignore API creds
+WEB-INF/config.properties
+
+# Ignore IDE files
+*.class
+*.log
+*.iml
+.idea/
+.vscode/
